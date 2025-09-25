@@ -1,0 +1,14 @@
+[package]
+name = "project_name"
+version = "0.1.0"
+edition = "2024"
+license = "Unlicense"
+authors = ["Jack Hamilton jackham800@gmail.com"]
+keywords = ["cli"]
+categories = ["command-line-utilities"]
+repository = "https://github.com/jackhamilton/project_name"
+description = ""
+
+[dependencies]
+toml-configurator = "~0"
+freezable-trait = "~0"
