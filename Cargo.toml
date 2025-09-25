@@ -12,3 +12,4 @@ description = ""
 [dependencies]
 toml-configurator = "~0"
 freezable-trait = "~0"
+cli-builder-macros = { version = "~0", path = "../cli-builder-macros" }
