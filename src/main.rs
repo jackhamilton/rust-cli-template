@@ -2,8 +2,6 @@ use cli_builder_macros::cli_builder;
 use std::env;
 use freezable_trait::freezable;
 
-static PRODUCT_NAME: &str = "product_name";
-
 #[derive(Debug)]
 #[freezable]
 struct Config {
@@ -21,7 +19,7 @@ impl Default for Config {
 }
 
 fn get_config() -> Config {
-    toml_configurator::get_config(PRODUCT_NAME.to_string())
+    toml_configurator::get_config(env!("CARGO_PKG_NAME").into())
 }
 
 cli_builder! {
