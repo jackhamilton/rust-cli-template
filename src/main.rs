@@ -1,4 +1,4 @@
-use configurator_macros::config_builder;
+use toml_configurator::configurator_macros::config_builder;
 use cli_builder_macros::cli_builder;
 use toml_configurator::get_config;
 use std::env;
