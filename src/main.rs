@@ -25,7 +25,7 @@ fn get_config() -> Config {
 cli_builder! {
     [
         CLICommand {
-            short_flag: 't',
+            short_flag: "t",
             long_flag: "test",
             command: test_command,
             description: "Run a test"
