@@ -7,7 +7,6 @@ config_builder!(
     example: String = "test".to_string(),
 );
 
-
 cli_builder! {
     [
         CLICommand {

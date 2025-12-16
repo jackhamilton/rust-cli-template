@@ -1,4 +1,4 @@
-Sets up a CLI app project using config_builder and cli_builder tools.
+Sets up a CLI app project using [config_builder](https://github.com/jackhamilton/configurator-rs) and [cli_builder](https://github.com/jackhamilton/cli-builder-macros) tools.
 
 ``` rust
 use configurator_macros::config_builder;
