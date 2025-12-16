@@ -1,10 +1,12 @@
 use configurator_macros::config_builder;
 use cli_builder_macros::cli_builder;
+use toml_configurator::get_config;
 use std::env;
 
 config_builder!(
-    example: String = "".to_string(),
+    example: String = "test".to_string(),
 );
+
 
 cli_builder! {
     [
@@ -18,5 +20,5 @@ cli_builder! {
 }
 
 fn test_command() {
-    println!("This is a test");
+    println!("This is a {}", CONFIG.example);
 }
