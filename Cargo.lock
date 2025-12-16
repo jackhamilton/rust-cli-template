@@ -26,6 +26,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "configurator-macros"
+version = "0.1.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9560aca2765b7a32d2402b2dd2c93532e7a0a0a625f946282bd41f5ed7b7ba8e"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "dirs"
 version = "6.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -172,6 +183,7 @@ name = "project_name"
 version = "0.1.0"
 dependencies = [
  "cli-builder-macros",
+ "configurator-macros",
  "freezable-trait 0.4.0",
  "toml-configurator",
 ]

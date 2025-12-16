@@ -1,26 +1,10 @@
+use configurator_macros::config_builder;
 use cli_builder_macros::cli_builder;
 use std::env;
-use freezable_trait::freezable;
 
-#[derive(Debug)]
-#[freezable]
-struct Config {
-    // todo: configuration
-    example: String
-}
-
-impl Default for Config {
-    fn default() -> Self {
-        Self {
-            _unknown_fields: [].into(),
-            example: "".into(),
-        }
-    }
-}
-
-fn get_config() -> Config {
-    toml_configurator::get_config(env!("CARGO_PKG_NAME").into())
-}
+config_builder!(
+    example: String = "".to_string(),
+);
 
 cli_builder! {
     [
